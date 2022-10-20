@@ -53,21 +53,77 @@ git xxx \<squash> | Combines multiple commits into a single commit
 (you should never squash on main branch)
 
 ## .gitignore
-allows you to hide files, directories from version controll
+allows you to hide files, directories from version control
 "!" = "do not ignore"
 eg. !results/* does not ignore the results folder, but everything in it
-[image 2]
+
+Example file:
+```
+# basic .gitignore-File
+.idea/
+*.iml
+target/
+!results/*
+results/test_logs/
+
+.classpath
+.project
+bin/
+.settings/
+
+# ignore VS Code configuration files
+.vs
+```
 
 ## Semantic commit messages & conventional commits
-[image 3]
-commit mesages are human and machine readable and allow for superior automated processing
-top left code block:
+
+```
+<type>(<scope>): <subject>
+<body>
+<footer>
+```
 \<subject> = short message
+```
+fix(config): fix PERF config
+
+Update the condiguration data in order to ensure that the new resources are fully used.
+
+Fixes #36727
+```
+```
+types
+- fix
+- feat
+- build
+- chore
+- ci
+- docs
+- style
+- refactor
+- perf
+- test
+```
+```
+Example scopes:
+- init
+- runner
+- watcher
+- config
+
+Footers:
+- Fixes
+- BREAKING CHANGE
+```
+
+commit mesages are human and machine readable and allow for superior automated processing
+
 source: https://www.conventionalcommits.org/en/v1.0.0/
 
 ## configuration
-git config --global user.name "Alexander Piloni"
-git config -- global user.email "piloni@live.at" 
+```
+git config --global user.name "Alexander Piloni"  
+git config --global user.email "piloni@live.at"
+```
 
 ## git lfs
 Enhances the possibility to store lage files
@@ -79,7 +135,7 @@ git changes how large files are handled. It changes what is written in files
 
 
 # Tools & Resources
-images 4-6
+[images4-6]
 Links:
 Official Documentary: https//git-scm.com/docs
 Git Explorer: https://gitexplorer.com/
