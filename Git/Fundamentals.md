@@ -126,21 +126,40 @@ git config --global user.email "piloni@live.at"
 ```
 
 ## git lfs
-Enhances the possibility to store lage files
-git lfs track "*.pdf"
-git add .gitattributes
-git add file.pdf
-git lfs migrate (to also track older files)
+Enhances the possibility to store lage files  
+git lfs track "*.pdf"  
+git add .gitattributes  
+git add file.pdf  
+git lfs migrate (to also track older files)  
 git changes how large files are handled. It changes what is written in files
 
 
 # Tools & Resources
-[images4-6]
+## Editors
+- [Git Kraken](https://www.gitkraken.com)
+- [Git Extensions](http://gitextensions.github.io)
+- [SourceTree](https://www.sourcetreeapp.com)
+
+## Terminals
+- Powershell
+- [ConEmu](https://conemu.github.io)
+- [Mingw64](https://www.mingw-w64.org)
+
+## Diff & Merge
+- [Meld](https://meldmerge.org)
+- [P4Merge](https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge)
+- [VS Code](https://code.visualstudio.com)
+- [Beyond Compare](https://www.scootersoftware.com)
+
 Links:
-Official Documentary: https//git-scm.com/docs
-Git Explorer: https://gitexplorer.com/
-Cheatsheet: https://about.gitlab.com/images/press/git-cheat-sheet.pdf (Gitlab)
-Ohmygit: https://ohmygit.org/
-Tips and tricks:
-    https://ohshitgit.com/
+- Official Documentary: 
+    - https://git-scm.com/docs
+- Git Explorer:
+    - https://gitexplorer.com/
+- Cheatsheet:
+    - https://about.gitlab.com/images/press/git-cheat-sheet.pdf
+- Ohmygit:
+    - https://ohmygit.org/
+- Tips and tricks:
+    - https://ohshitgit.com/
 
